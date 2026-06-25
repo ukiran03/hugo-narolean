@@ -89,9 +89,3 @@ Display a link card with a website icon:
 
 **Examples:**
 {{< link title="Google" description="The world largest search engine." url="https://google.com" icon="https://google.com/favicon.ico" >}}
-
-### Tencent Video
-
-```markdown
-{{</* tencent 视频ID */>}}
-```
