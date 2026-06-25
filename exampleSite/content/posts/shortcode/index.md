@@ -90,15 +90,6 @@ Display a link card with a website icon:
 **Examples:**
 {{< link title="Google" description="The world largest search engine." url="https://google.com" icon="https://google.com/favicon.ico" >}}
 
-### Bilibili
-
-Embed Bilibili videos:
-
-```markdown
-{{</* bilibili BV号 */>}}
-{{</* bilibili AV号 分P号 */>}}
-```
-
 ### Tencent Video
 
 ```markdown
