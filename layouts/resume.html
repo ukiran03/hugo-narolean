@@ -80,7 +80,7 @@
     <!-- 概要 -->
     {{ with $p.summary }}
       <section class="mb-8">
-        <div class="bg-card border-border rounded-lg border p-6 shadow-sm">
+        <div class="bg-card border-border rounded-sm border p-6 shadow-sm">
           <p class="text-foreground leading-relaxed">{{ . }}</p>
         </div>
       </section>
@@ -96,7 +96,7 @@
         </h2>
         <div class="space-y-4">
           {{ range . }}
-            <div class="resume-entry bg-card border-border rounded-lg border p-6 shadow-sm">
+            <div class="resume-entry bg-card border-border rounded-sm border p-6 shadow-sm">
               <div class="mb-3 flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
                 <div class="flex-1">
                   <h3 class="text-foreground font-semibold">{{ .title }}</h3>
@@ -127,7 +127,7 @@
                 <div class="mt-3 flex flex-wrap gap-1.5">
                   {{ range . }}
                     <span
-                      class="bg-primary/10 text-primary rounded-md px-2 py-0.5 text-xs font-medium"
+                      class="bg-primary/10 text-primary rounded-s px-2 py-0.5 text-xs font-medium"
                       >{{ . }}</span
                     >
                   {{ end }}
@@ -149,7 +149,7 @@
         </h2>
         <div class="space-y-4">
           {{ range . }}
-            <div class="resume-entry bg-card border-border rounded-lg border p-6 shadow-sm">
+            <div class="resume-entry bg-card border-border rounded-sm border p-6 shadow-sm">
               <div class="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
                 <div class="flex-1">
                   <h3 class="text-foreground font-semibold">{{ .degree }}</h3>
@@ -180,7 +180,7 @@
           {{ partial "features/icon.html" (dict "name" "star" "size" "md" "ariaLabel" "") }}
           {{ T "resume.skills" | default "Skills" }}
         </h2>
-        <div class="bg-card border-border rounded-lg border p-6 shadow-sm">
+        <div class="bg-card border-border rounded-sm border p-6 shadow-sm">
           <div class="space-y-3">
             {{ range . }}
               <div class="flex flex-wrap items-baseline gap-2">
@@ -190,7 +190,7 @@
                 <div class="flex flex-wrap gap-2">
                   {{ range .items }}
                     <span
-                      class="bg-muted text-foreground rounded-md px-2.5 py-0.5 text-sm font-medium"
+                      class="bg-muted text-foreground rounded-s px-2.5 py-0.5 text-sm font-medium"
                       >{{ . }}</span
                     >
                   {{ end }}
@@ -215,7 +215,7 @@
               {{ partial "features/icon.html" (dict "name" "file-text" "size" "md" "ariaLabel" "") }}
               {{ T "resume.certifications" | default "Certifications" }}
             </h2>
-            <div class="bg-card border-border flex-1 rounded-lg border p-6 shadow-sm">
+            <div class="bg-card border-border flex-1 rounded-sm border p-6 shadow-sm">
               <ul class="space-y-3">
                 {{ range . }}
                   <li>
@@ -252,7 +252,7 @@
               {{ partial "features/icon.html" (dict "name" "language" "size" "md" "ariaLabel" "") }}
               {{ T "resume.languages" | default "Languages" }}
             </h2>
-            <div class="bg-card border-border flex-1 rounded-lg border p-6 shadow-sm">
+            <div class="bg-card border-border flex-1 rounded-sm border p-6 shadow-sm">
               <ul class="space-y-2">
                 {{ range . }}
                   <li class="flex items-center justify-between">

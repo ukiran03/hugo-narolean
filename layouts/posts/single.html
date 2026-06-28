@@ -15,7 +15,7 @@
     {{- $coverImage := .Scratch.Get "imageUrl" -}}
 
     {{- if $coverImage -}}
-      <div class="mb-8 overflow-hidden rounded-2xl">
+      <div class="mb-8 overflow-hidden rounded-md">
         <img
           src="{{ $coverImage }}"
           alt="{{ .Title }}"

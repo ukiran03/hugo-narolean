@@ -24,11 +24,11 @@
           <!-- Dropdown 内容 -->
           <div
             id="toc-center-dropdown"
-            class="bg-card border-border scrollbar-hide absolute top-full left-1/2 mt-2 hidden max-h-[60vh] w-[280px] origin-top -translate-x-1/2 scale-95 overflow-y-auto rounded-xl border p-4 opacity-0 shadow-lg transition-all"
+            class="bg-card border-border scrollbar-hide absolute top-full left-1/2 mt-2 hidden max-h-[60vh] w-[280px] origin-top -translate-x-1/2 scale-95 overflow-y-auto rounded border p-4 opacity-0 shadow-lg transition-all"
           >
             <div
               id="toc-center-content"
-              class="[&_a]:text-muted-foreground [&_a:hover]:bg-primary/10 [&_a:hover]:text-primary [&_a.active]:bg-primary/10 [&_a.active]:text-primary text-sm [&_a]:block [&_a]:truncate [&_a]:rounded-md [&_a]:px-2 [&_a]:py-1 [&_a]:transition-colors [&_a.active]:font-medium [&_li]:my-1.5 [&_nav>ul]:pl-0 [&_ul]:list-none [&_ul]:pl-4"
+              class="[&_a]:text-muted-foreground [&_a:hover]:bg-primary/10 [&_a:hover]:text-primary [&_a.active]:bg-primary/10 [&_a.active]:text-primary text-sm [&_a]:block [&_a]:truncate [&_a]:rounded-s [&_a]:px-2 [&_a]:py-1 [&_a]:transition-colors [&_a.active]:font-medium [&_li]:my-1.5 [&_nav>ul]:pl-0 [&_ul]:list-none [&_ul]:pl-4"
             >
               {{ .TableOfContents }}
             </div>
@@ -47,7 +47,7 @@
         <!-- Hover 悬浮的详细目录卡片 -->
         <div
           id="toc-side-dropdown"
-          class="bg-card border-border scrollbar-hide pointer-events-none absolute top-0 right-0 max-h-[80vh] w-64 translate-x-8 overflow-y-auto rounded-l-xl border-y border-l p-4 opacity-0 shadow-xl transition-all duration-300 md:w-80 [&.is-open]:pointer-events-auto [&.is-open]:translate-x-0 [&.is-open]:opacity-100"
+          class="bg-card border-border scrollbar-hide pointer-events-none absolute top-0 right-0 max-h-[80vh] w-64 translate-x-8 overflow-y-auto rounded-l border-y border-l p-4 opacity-0 shadow-xl transition-all duration-300 md:w-80 [&.is-open]:pointer-events-auto [&.is-open]:translate-x-0 [&.is-open]:opacity-100"
         >
           <div class="text-foreground mb-3 flex items-center justify-between text-sm font-bold">
             <span>{{ T "ui.toc" }}</span>
@@ -60,7 +60,7 @@
           </div>
           <div
             id="toc-side-content"
-            class="[&_a]:text-muted-foreground [&_a:hover]:bg-primary/10 [&_a:hover]:text-primary [&_a.active]:bg-primary/10 [&_a.active]:text-primary text-sm [&_a]:block [&_a]:rounded-md [&_a]:px-2 [&_a]:py-1 [&_a]:wrap-break-word [&_a]:whitespace-normal [&_a]:transition-colors [&_a.active]:font-medium [&_li]:my-1.5 [&_nav>ul]:pl-0 [&_ul]:list-none [&_ul]:pl-4"
+            class="[&_a]:text-muted-foreground [&_a:hover]:bg-primary/10 [&_a:hover]:text-primary [&_a.active]:bg-primary/10 [&_a.active]:text-primary text-sm [&_a]:block [&_a]:rounded-s [&_a]:px-2 [&_a]:py-1 [&_a]:wrap-break-word [&_a]:whitespace-normal [&_a]:transition-colors [&_a.active]:font-medium [&_li]:my-1.5 [&_nav>ul]:pl-0 [&_ul]:list-none [&_ul]:pl-4"
           >
             {{ .TableOfContents }}
           </div>
